@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreaRectangulo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="rectangulo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="Digite la altura del ractangulo" TextColor="#FF6D60" FontSize="15"/>
+            <Entry x:Name="h" Placeholder="Altura del rectangulo" Keyboard="Numeric"/>
+
+            <Label Text="Digite la base del ractangulo" TextColor="#FF6D60" FontSize="15"/>
+            <Entry x:Name="b" Placeholder="base del rectangulo" Keyboard="Numeric"/>
+
+            <Label Text="Perimetro del ractangulo" TextColor="#FF6E31" FontSize="15"/>
+            <Entry x:Name="Perimetro" Placeholder="0" IsEnabled="False" />
+
+            <Label Text="Superficie del ractangulo" TextColor="#FF6E31" FontSize="15"/>
+            <Entry x:Name="Superficie" Placeholder="0" IsEnabled="False" />
+
+            <Button x:Name="btnCalcular" Text="CALCULAR" BackgroundColor="#E57C23" TextColor="WhiteSmoke" BorderColor="Gray"
+                    WidthRequest="100" HeightRequest="50" BorderWidth="3" Clicked="btnCalcular_Clicked" HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
